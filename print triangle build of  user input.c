@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+   int i,j,n;
+   printf("please enter number of rows : ");
+   scanf("%d",&n);
+   while(n<1 || n>9)
+   {
+        printf("please enter number of rows : ");
+        scanf("%d",&n); 
+   }
+   for(i=0;i<=n;i++)
+   {
+     for(j=1;j<=n-i;j++)
+	    printf(" ");
+     for(j=1;j<=i;j++)
+       printf("%d",j);
+
+     for(j=i-1;j>=1;j--)
+	  printf("%d",j);
+ 
+     printf("\n");
+   }
+   
+   return 0;
+}
+
+
+
